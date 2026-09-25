@@ -31,7 +31,7 @@ jobs:
     - name: Go Mod Tidy
       run: |
         go mod tidy
-        git diff --exit-code go.mod go.sum
+        git diff --exit-code
 
     - name: Go Mod Verify
       run: go mod verify
