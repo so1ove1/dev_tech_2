@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net/http"
 	"encoding/json"
+	"net/http"
 	"time"
 
 	"github.com/so1ove1/dev_tech_2/daysfornewyear"
@@ -15,7 +15,7 @@ func main() {
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	date := r.URL.Query().Get("date");
+	date := r.URL.Query().Get("date")
 
 	var d time.Time
 	if date == "" {
